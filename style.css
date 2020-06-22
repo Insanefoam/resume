@@ -27,6 +27,7 @@ body{
 }
 
 .nav__el{
+    transition: .2s;
     font-size: 25px;
     font-weight: 700;
     opacity: .5;
@@ -45,16 +46,64 @@ body{
 
 .about{
     padding: 50px 140px;
+    text-align: center;
+    position: relative;
 }
 
 .about__title{
     font-size: 30px;
     font-weight: 500;
-    text-align: center;
     margin-bottom: 130px;
+}
+
+.slider{
+    border-left: 4px solid #2EAAD1;
+    border-right: 4px solid #2EAAD1;
+    margin-bottom: 100px;
 }
 
 .slider__title{
     font-size: 27px;
     text-align: center;
+    margin-bottom: 80px;
+}
+
+.slide__title{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.slide__items{
+    display: flex;
+    justify-content: center;
+}
+
+.slide__item{
+    font-size: 33px;
+}
+
+.slide__item:not(:first-child){
+    margin-left: 60px;
+}
+
+.about input{
+    transition: 0.15s;
+    position: absolute;
+    outline: none;
+}
+
+.about input:hover {
+    transition: 0.15s;
+    opacity: 0.5;
+}
+
+.slider-left{
+    left: 2%;
+    top: 50%;
+}
+
+.slider-right{
+    right: 2%;
+    top: 50%;
+    transform: rotate(180deg);
 }
