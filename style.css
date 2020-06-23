@@ -5,9 +5,10 @@ body{
 
 .main-container{
     font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 
-.footer{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +49,8 @@ body{
     padding: 50px 140px;
     text-align: center;
     position: relative;
+    max-width: 1645px;
+    margin: 0 auto;
 }
 
 .about__title{
@@ -99,11 +102,42 @@ body{
 
 .slider-left{
     left: 2%;
-    top: 50%;
+    top: 48%;
 }
 
 .slider-right{
     right: 2%;
-    top: 50%;
+    top: 48%;
     transform: rotate(180deg);
+}
+
+.projects{
+    text-align: center;
+    padding: 0 130px;
+    max-width: 1645px;
+    margin: 0 auto;
+}
+
+.projects__title{
+    font-size: 42px;
+    margin-bottom: 70px;
+}
+
+.project{
+    border: 3px solid #26AF8F;
+    border-radius: 85px;
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.project__title{
+    font-size: 50px;
+    font-weight: 500;
+    padding: 0 270px;
+    display: inline-block;
+}
+
+
+.project__right{
+    transform: scale(-1, 1);
 }
