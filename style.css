@@ -18,7 +18,7 @@ body{
 }
 
 .logo{
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 700;
 }
 
@@ -29,7 +29,7 @@ body{
 
 .nav__el{
     transition: .2s;
-    font-size: 25px;
+    font-size: 1.2vw;
     font-weight: 700;
     opacity: .5;
     text-decoration: none;
@@ -54,7 +54,7 @@ body{
 }
 
 .about__title{
-    font-size: 30px;
+    font-size: 1.6vw;
     font-weight: 500;
     margin-bottom: 130px;
 }
@@ -63,17 +63,19 @@ body{
     border-left: 4px solid #2EAAD1;
     border-right: 4px solid #2EAAD1;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .slider__title{
-    font-size: 27px;
+    font-size: 1.5vw;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 4vw;
 }
 
 .slide__title{
-    font-size: 40px;
-    margin-bottom: 80px;
+    font-size: 2vw;
+    margin-bottom: 4vw;
 }
 
 .slide__items{
@@ -82,7 +84,7 @@ body{
 }
 
 .slide__item{
-    font-size: 33px;
+    font-size: 2vw;
 }
 
 .slide__item:not(:first-child){
@@ -93,6 +95,8 @@ body{
     transition: 0.15s;
     position: absolute;
     outline: none;
+    width: 7vw;
+    height: 7vw;
 }
 
 .about input:hover {
@@ -101,12 +105,12 @@ body{
 }
 
 .slider-left{
-    left: 2%;
+    left: 0%;
     top: 48%;
 }
 
 .slider-right{
-    right: 2%;
+    right: 0%;
     top: 48%;
     transform: rotate(180deg);
 }
@@ -119,22 +123,29 @@ body{
 }
 
 .projects__title{
-    font-size: 42px;
+    font-size: 2vw;
     margin-bottom: 70px;
 }
 
 .project{
     border: 3px solid #26AF8F;
     border-radius: 85px;
-    padding: 80px 0;
+    padding: 3vw 0;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project img {
+    width: 6vw;
+    height: 6vw;
 }
 
 .project__title{
-    font-size: 50px;
-    font-weight: 500;
-    padding: 0 270px;
+    font-size: 3vw;
+    font-weight: 700;
     display: inline-block;
+    height: 100%;
 }
 
 
