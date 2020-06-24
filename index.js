@@ -14,7 +14,8 @@ function moveScroll() {
 }
 setInterval(moveScroll, 18);
 
-const slide = document.querySelector('.slide-container');
+const container = document.querySelector('.slider');
+const slide = document.querySelector('.slide-container')
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#slider-right');
 const prev = document.querySelector('#slider-left');
@@ -25,9 +26,8 @@ let transitionWidth = 0;
 slide.style.transform = `translateX(${count * (-size)}px)`;
 
 next.addEventListener('click', () => {
-    console.log('hello')
-    let id = setInterval(animation.bind(this, -1), 1)
-    next.disabled = true
+    let id = setInterval(animation.bind(this, -1), 1);
+    next.disabled = true;
     setTimeout(() => {
         clearInterval(id)
         count++
@@ -37,12 +37,13 @@ next.addEventListener('click', () => {
             slide.style.transform = `translateX(${count * (-size)}px)`
         }
         next.disabled = false
-    }, size)
+    }, size);
+    container.style.borderLeft = 'none'
 })
 
 prev.addEventListener('click', () => {
-    let id = setInterval(animation.bind(this, 1), 1)
-    prev.disabled = true
+    let id = setInterval(animation.bind(this, 1), 1);
+    prev.disabled = true;
     setTimeout(() => {
         clearInterval(id)
         count--
@@ -52,7 +53,7 @@ prev.addEventListener('click', () => {
             slide.style.transform = `translateX(${count * (-size)}px)`
         }
         prev.disabled = false
-    }, size)
+    }, size);
 });
 
 
