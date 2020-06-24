@@ -55,7 +55,7 @@ body{
 .about__title{
     font-size: 1.6vw;
     font-weight: 500;
-    margin-bottom: 130px;
+    margin-bottom: 10vw;
 }
 
 .about__scroll img{
@@ -205,4 +205,34 @@ body{
 .contacts__el a:hover{
     transition: 0.2s;
     color: #26AF8F;
+}
+
+@media (max-width: 800px) {
+    .logo{
+        font-size: 3vw;
+    }
+
+    .nav__el{
+        font-size: 2.2vw;
+    }
+
+    .about__title{
+        font-size: 2.2vw;
+    }
+    
+    .slider__title{
+        font-size: 2.2vw;
+    }
+
+    .projects{
+        margin-top: 14vw;
+    }
+
+    .contacts__title{
+        font-size: 2.5vw;
+    }
+
+    .contacts__el a{
+        font-size: 2vw;
+    }
 }
