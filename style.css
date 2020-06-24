@@ -49,6 +49,7 @@ body{
     padding: 0 12vw;
     text-align: center;
     margin: 0 auto 3vw;
+    position: relative;
 }
 
 .about__title{
@@ -69,13 +70,25 @@ body{
     margin-bottom: 5vw;
     display: flex;
     flex-direction: column;
-    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .slider__title{
     font-size: 1.5vw;
     text-align: center;
     margin-bottom: 4vw;
+}
+
+.slide-container{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.slide{
+    width: 100%;
+    flex: 0 0 auto;
 }
 
 .slide__title{
@@ -96,9 +109,8 @@ body{
     margin-left: 60px;
 }
 
-.slider input{
+.about input{
     transition: 0.15s;
-    position: absolute;
     outline: none;
     width: 7vw;
     height: 7vw;
@@ -110,14 +122,16 @@ body{
 }
 
 #slider-left{
-    left: -12%;
-    top: 30%;
+    left: 3vw;
+    top: 16vw;
+    position: absolute;
 }
 
 #slider-right{
-    right: -12%;
-    top: 30%;
+    right: 3vw;
+    top: 16vw;
     transform: rotate(180deg);
+    position: absolute;
 }
 
 .projects{
