@@ -123,13 +123,13 @@ body{
 
 #slider-left{
     left: 3vw;
-    top: 16vw;
+    bottom: 4vw;
     position: absolute;
 }
 
 #slider-right{
     right: 3vw;
-    top: 16vw;
+    bottom: 4vw;
     transform: rotate(180deg);
     position: absolute;
 }

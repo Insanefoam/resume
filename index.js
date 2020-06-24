@@ -59,6 +59,16 @@ prev.addEventListener('click', () => {
 const animation = (direction) => {
     if (transitionWidth <= size) {
         slide.style.transform = `translateX(${((count) * (-size) + transitionWidth * direction)}px)`
-        transitionWidth += 6
+        transitionWidth += 9
     }
 };
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
