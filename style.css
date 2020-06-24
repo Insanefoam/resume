@@ -48,8 +48,7 @@ body{
 .about{
     padding: 0 12vw;
     text-align: center;
-    position: relative;
-    margin: 0 auto;
+    margin: 0 auto 3vw;
 }
 
 .about__title{
@@ -61,14 +60,16 @@ body{
 .about__scroll img{
     width: 2vw;
     height: 4vw;
+    position: absolute;
 }
 
 .slider{
     border-left: 4px solid #2EAAD1;
     border-right: 4px solid #2EAAD1;
-    margin-bottom: 100px;
+    margin-bottom: 5vw;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .slider__title{
@@ -95,7 +96,7 @@ body{
     margin-left: 60px;
 }
 
-.about input{
+.slider input{
     transition: 0.15s;
     position: absolute;
     outline: none;
@@ -108,35 +109,43 @@ body{
     opacity: 0.5;
 }
 
-.slider-left{
-    left: 0%;
-    top: 48%;
+#slider-left{
+    left: -12%;
+    top: 30%;
 }
 
-.slider-right{
-    right: 0%;
-    top: 48%;
+#slider-right{
+    right: -12%;
+    top: 30%;
     transform: rotate(180deg);
 }
 
 .projects{
     text-align: center;
-    padding: 0 130px;
-    margin: 0 auto;
+    padding: 0 12vw;
+    margin: 12vw auto 0;
 }
 
 .projects__title{
     font-size: 2vw;
-    margin-bottom: 70px;
+    margin-bottom: 5vw;
 }
 
 .project{
+    transition: .4s;
     border: 3px solid #26AF8F;
     border-radius: 85px;
     padding: 3vw 0;
-    margin-bottom: 80px;
+    margin-bottom: 5vw;
     display: flex;
     justify-content: space-around;
+    color: black;
+    text-decoration: none
+}
+
+.project:hover{
+    transition: .4s;
+    opacity: .5;
 }
 
 .project img {
@@ -174,7 +183,7 @@ body{
 }
 
 .contacts__el:not(:first-child){
-    margin-left: 30px;
+    margin-left: 5vw;
 }
 
 .contacts__el a:hover{
